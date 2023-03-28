@@ -1,2 +1,4 @@
 # portfolio-first
-Portfolio showcasing abilities and applications utilizing Javascript, CSS, and HTML.
+
+# Objectives
+*Portfolio showcasing abilities and applications utilizing Javascript, CSS, and HTML.
