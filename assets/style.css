@@ -2,24 +2,21 @@
     margin: 0;
     padding: 0;
     font-family: "treuchet ms", sans-serif;
-    box-sizing: border-box 
+    box-sizing: border-box; 
+    --myblue: #0800ff;
+    --mypurple: #a91fff;
+
+
 }
 body{
     background: black;
-    color: #a91fff;
+    color: var(--mypurple);
 }
-/* #header{ */
-    /* width: 100%; */
-    /* height:100vh; */
-    /* background-image: url(./Images/portfolio-background1.png); */
-    /* background-size: cover; */
-    /* background-position: center; */
-/* } */
 .logo {
     width: 10%;
     height: 10%;
 }
-.container {
+.header-container {
     padding: 10px 10%;
 }
 nav{
@@ -34,7 +31,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color:#a91fff;
+    color:var(--mypurple);
     text-decoration:none;
     font-size: 18px;
     position: relative;
@@ -43,7 +40,7 @@ nav ul li a::after{
     content:'';
     width: 0%;
     height: 3px;
-    background: #0800ff;
+    background: var(--myblue);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -51,4 +48,27 @@ nav ul li a::after{
 }
 nav ul li a:hover:after{
     width:100%;
+}
+.main-container {
+    display:flex;
+    flex-direction: column;
+    background-color: lightblue;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+.main-item {
+    width: 80%;
+    height: 600px;
+    background-color: lightgreen;
+}
+.about-me {
+    display:flex;
+    height: 350px;
+}
+.about-me-text {
+    width: 60%;
+}
+.about-me img {
+    width: 260px;
+    height: 300px;
 }
