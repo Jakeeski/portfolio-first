@@ -1,12 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "treuchet ms", sans-serif;
+    font-family: "trebuchet ms", sans-serif;
     box-sizing: border-box; 
     --myblue: #0800ff;
     --mypurple: #a91fff;
-
-
 }
 body{
     background: black;
@@ -49,17 +47,23 @@ nav ul li a::after{
 nav ul li a:hover:after{
     width:100%;
 }
+.applications-header {
+    font-size: 30px;
+}
 .main-container {
     display:flex;
     flex-direction: column;
-    background-color: lightblue;
-    align-items: center;
-    padding: 20px 0 0 0;
+    /* background-color: lightblue; */
+    align-items: left;
+    padding: 20px;
 }
 .main-item {
-    width: 80%;
-    height: 600px;
-    background-color: lightgreen;
+    width: 90%;
+    height: 1000px;
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .about-me {
     display:flex;
@@ -67,8 +71,75 @@ nav ul li a:hover:after{
 }
 .about-me-text {
     width: 60%;
+    font-size: 25px;
 }
 .about-me img {
     width: 260px;
     height: 300px;
+}
+.contact-me{
+    /* background-color: pink; */
+    height: 20%;
+    display:inline;
+}
+.contact-me ul {
+    margin-left: 10%;
+}
+.contact-me-header {
+    font-size: 30px;
+}
+.application-image {
+    height: 70%;
+    width: 100%;
+    border: var(--myblue);
+    border-style:groove;
+    /* background-color: green; */
+}
+.top {
+    height: 30%;
+    /* background-color: red;   */
+}
+.application-card {
+    height: 20%;
+    width: 48%;
+    /* background-color: aqua; */
+}
+/* .application-card1 { */
+/* }   */
+.applications {
+    display: flex;
+    justify-content: space-between;
+    border: var(--myblue);
+    padding-top: 20px;
+    
+}
+.application-image1 {
+    background-image: url(./Images/semantic-img.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;    
+}
+.application-image2 {
+    background-image: url(./Images/calculator-image.jpg);
+    height: 100%;
+    width: 100%;
+    background-size:contain;    
+}
+.application-image3 {
+    background-image: url(./Images/cyber-security-image.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;    
+}
+.application-image4 {
+    background-image: url(./Images/puzzle-image.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;    
+}
+.application-image5 {
+    background-image: url(./Images/gaming-image.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;    
 }
