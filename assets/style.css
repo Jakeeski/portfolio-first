@@ -11,11 +11,19 @@ body{
     color: var(--mypurple);
 }
 .logo {
-    width: 10%;
-    height: 10%;
+    height: 100px;
+}
+.logo-box {
+   display: flex;
+   flex-direction: column; 
 }
 .header-container {
-    padding: 10px 10%;
+    padding: 10px 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-text {
+    font-size:9px;
 }
 nav{
     display: flex;
@@ -53,21 +61,25 @@ nav ul li a:hover:after{
 .main-container {
     display:flex;
     flex-direction: column;
-    /* background-color: lightblue; */
+    /* background-color: lightblue;  */
     align-items: left;
     padding: 20px;
 }
 .main-item {
     width: 90%;
     height: 1000px;
-    /* background-color: lightgreen; */
+    /* background-color: lightgreen;  */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 .about-me {
     display:flex;
-    height: 350px;
+    height: 300px;
+}
+.about-me-header {
+    font-size: 30px;
+    /* text-decoration: underline 1px solid var(--myblue); */
 }
 .about-me-text {
     width: 60%;
@@ -78,15 +90,21 @@ nav ul li a:hover:after{
     height: 300px;
 }
 .contact-me{
-    /* background-color: pink; */
-    height: 20%;
-    display:inline;
+    /* background-color: pink;  */
+    height: 30%;
+    font-size: 20px;
+    padding: 20px;
 }
 .contact-me ul {
     margin-left: 10%;
+    display: inline-flex;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: larger;
 }
 .contact-me-header {
     font-size: 30px;
+    padding-left: 20px;
 }
 .application-image {
     height: 70%;
@@ -112,6 +130,11 @@ nav ul li a:hover:after{
     border: var(--myblue);
     padding-top: 20px;
     
+}
+.smaller-applications {
+    display:flex;
+    flex-wrap: wrap;
+    /* background-color: orange; */
 }
 .application-image1 {
     background-image: url(./Images/semantic-img.png);

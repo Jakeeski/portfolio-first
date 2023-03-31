@@ -11,25 +11,30 @@
   <body>
     <header id="header">
       <div class="header-container">
+        <div class="logo-box">
+        <img src="./assets/Images/portfolio-logo.png" class="logo" />
+        <icon class="icon-text">
+          <h1>Full Stack Student</h1>
+        </icon>
+        </div>
         <nav>
-          <img src="./assets/Images/portfolio-logo.png" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Applications</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#apps">Applications</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <icon class="icon-text">
-          <p>Full Stack Student</p>
-        </icon>
+        
       </div>
     </header>
     <main>
       <div class="main-container">
-        <div class="main-item about-me">
+        <div class="about-me-header">
+          <h2>About Me</h2>
+        </div>
+        <div id="about" class="main-item about-me">
           <div class="about-me-text">
-            <h2>About Me</h2>
             <p>
               Hello! My name is Jake Szyperski, and I'm a passionate student
               that is focused on web development. I'm currently in school full
@@ -45,48 +50,56 @@
         <div class="applications-header">
           <h2>Applications</h2>
         </div>
-        <div class="main-item applications">
+        <div id ="apps" class="main-item applications">
           <div class="application-card application-card1">
-            <div class="top">
-              <p>Semantic HTML</p>
+              <div class="top">
+                <p>Semantic HTML</p>
+              </div>
+              <a href="https://jakeeski.github.io/semantic-html/"><div class="application-image application-image1"></div></a>
             </div>
-            <div class="application-image application-image1"></div>
-          </div>
+          </a>
+          <!-- <div class="smaller-applications"> -->
           <div class="application-card">
             <div class="top">
               <p>Application 2</p>
             </div>
-            <div class="application-image application-image2"></div>
+            <a href="https://jakeeski.github.io/semantic-html/"><div class="application-image application-image2"></div></a>
           </div>
           <div class="application-card">
             <div class="top">
               <p>Application 3</p>
             </div>
-            <div class="application-image application-image3"></div>
+            <a href="https://jakeeski.github.io/semantic-html/"><div class="application-image application-image3"></div></a>
           </div>
           <div class="application-card">
             <div class="top">
               <p>Application 4</p>
             </div>
-            <div class="application-image application-image4"></div>
+            <a href="https://jakeeski.github.io/semantic-html/"><div class="application-image application-image4"></div></a>
           </div>
-          <div class="application-card">
+          <!-- <div class="application-card">
             <div class="top">
               <p>Application 5</p>
             </div>
-            <div class="application-image application-image5"></div>
+            <a href="https://jakeeski.github.io/semantic-html/"><div class="application-image application-image5"></div></a> -->
+          <!-- </div> -->
           </div>
         </div>
-        <div class="main-item contact-me">
-          <div class="contact-me-header">
-            <h2>Contact Me</h2>
-          </div>
+        <div class="contact-me-header">
+          <h2>Contact Me</h2>
+        </div>
+        <div id="contact" class="main-item contact-me">
+          <p>
+            GMAIL:example@gmail.com <br><br>
+            PHONE: 763-123-4567  
+          </p>
           <ul>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Linkdin</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Gmail</a></li>
-          </ul>
+            <li style="padding-left:2em"><a href="https://github.com/Jakeeski">Github</a></li>
+            <li style="padding-left:2em"><a href="#">Linkdin</a></li> 
+            <!-- I dont have a Linkdin yet -->
+            <li style="padding-left:2em"><a href="https://www.facebook.com/jakeszyperski/">Facebook</a></li>
+            <li style="padding-left:2em"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YouTube</a></li>
+          </ul>          
         </div>
       </div>
     </main>
